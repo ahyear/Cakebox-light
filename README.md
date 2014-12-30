@@ -1,26 +1,52 @@
-## Pourquoi  ? Qu'est ce qu'il y a de différent ?
+Cakebox-light
+===========
 
-Car la version principale de Cakebox commence à se faire vieille (et ceci malgré nos commits pour la maintenir en vie), et également car nous avions envie de découvrir de nouvelles technologies dans le domaine du web, c'était l'occasion !
+A small web interface written with [AngularJS](https://angularjs.org/) and [Silex](http://silex.sensiolabs.org/), to allows you to browse, watch, manage and share the files you want.
 
-On a donc décidé de refaire complètement l'outil que nous vous mettions a disposition, pour le réécrire + proprement et le rendre + performant. Pour cela nous utilisons [AngularJS](http://angularjs.org/ "AngularJS") pour le rendu, et [Silex](http://silex.sensiolabs.org/ "Silex") pour l'API.
-
-Contrairement à CakeBox original, CakeBox-light n'installe pas Rutorrent. Vous pouvez donc utiliser le client bit-torrent de votre choix : [Transmission-web](http://www.transmissionbt.com/), [RuTorrent](https://code.google.com/p/rutorrent/)...
-
-Aperçu:
-
-![Cakebox-light](http://i.imgur.com/7qEEPNA.png "Cakebox-light")
-
-## Comment installer Cakebox-light ?
-
-Pour cela rendez vous sur le [wiki](https://github.com/Cakebox/Cakebox-light/wiki) !
-
-### Authors
-
-* [@MardamBeyK](https://github.com/MardamBeyK)
-* [@Tuxity](https://github.com/Tuxity)
+[![GPL V2](http://img.shields.io/badge/license-GPL_V2-blue.svg?style=flat)](http://opensource.org/licenses/GPL-2.0)
 
 
-### Thanks for assistance and contributions:
+## Screenshots
 
-* [@MiLk](https://github.com/MiLk)
+![Screenshot1](http://i.imgur.com/wU3gJ46.png "Browse page in Cakebox-light")
+![Screenshot2](http://i.imgur.com/IljSDsL.jpg "Play page in Cakebox-light")
+
+
+## Features
+
+* Browse files thought a specified directory
+* Play videos directly in streaming
+* Easily share a link to download the file
+* Delete or archive a directory or a file
+* Link to your [BetaSeries](http://www.betaseries.com) account
+
+
+## Requirement
+
+* A webserver (Apache 2, NGinX...)
+* [Composer](https://getcomposer.org/)
+* [Bower](http://bower.io/)
+
+
+## Getting Started
+
+You can find installation informations (in french) on the [wiki](https://github.com/Cakebox/Cakebox-light/wiki)
+
+
+## License
+
+You may use, distribute and copy Cakebox-light under the terms of GNU General Public License version 2, which is displayed [here](https://github.com/Cakebox/Cakebox-light/blob/master/LICENSE).
+
+
+## Authors
+
+* [MardamBeyK](https://github.com/MardamBeyK)
+* [Tuxity](https://github.com/Tuxity)
+
+
+## Special thanks for assistance and contributions:
+
+* [martialdidit](https://github.com/martialdidit)
+* [Magicalex](https://github.com/Magicalex)
+* [ahyear](https://github.com/ahyear)
 * Candle

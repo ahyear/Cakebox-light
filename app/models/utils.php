@@ -2,7 +2,17 @@
 
 namespace App\Models\Utils;
 
-function get_size($file) {
+use Symfony\Component\Finder\SplFileInfo;
+
+
+/**
+ * Get the size of a directory or a file
+ *
+ * @param SplFileInfo $file SplFileInfo instance
+ *
+ * @return int The calculated size
+ */
+function get_size(SplFileInfo $file) {
 
     $size = 0;
 
@@ -18,4 +28,24 @@ function get_size($file) {
     } catch (\RuntimeException $e) {}
 
     return $size;
+}
+
+/**
+ * Check if the path contains .. to avoid directory traversing
+ *
+ * @param string $basePath
+ * @param string $userPath
+ *
+ * @return string
+ */
+function check_path($basePath, $userPath)
+{
+    $realBase = realpath($basePath);
+    $realUser = realpath($basePath . "/" . $userPath);
+
+    if ($realUser === false || strpos($realUser, $realBase) !== 0) {
+        return "";
+    }
+
+    return $userPath;
 }
